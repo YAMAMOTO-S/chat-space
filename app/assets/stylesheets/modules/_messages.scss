@@ -1,10 +1,12 @@
+$marinblue: #38aef0;
+$subtext: #999999;
+
 * {
   box-sizing: border-box;
 }
 .wrapper {
   display: flex;
 }
-
 .left {
   width: 300px;
   &__header {
@@ -52,9 +54,6 @@
     
   }
 }
-
-
-
 .right {
   width: calc(100vw - 300px);
   &__header {
@@ -67,7 +66,7 @@
       color: #333333;
       font-size: 20px;
       &__member {
-        color: #999999;
+        color: $subtext;
         font-size: 12px;
         padding-top: 15px;
       }
@@ -78,15 +77,13 @@
       height: 40px;
       width: 72px;
       border: 1px solid;
-      color: #38aef0;
+      color: $marinblue;
       &--link {
         text-decoration: none;
-        color: #38aef0;
+        color: $marinblue;
       }
     }
   }
-
-
   &__main {
     background-color: #fafafa;
     height: calc(100vh - 190px);
@@ -101,7 +98,7 @@
         font-weight: bold;
       }
       &__date {
-        color: #999999;
+        color: $subtext;
         font-size: 12px;
       }
     }
@@ -111,8 +108,40 @@
       padding-bottom: 46px;
     }
   }
-  &__footer {
-    background-color: #d2d2d2;
+  &__form {
     height: 90px;
+    padding: 20px 40px;
+    background-color: #d2d2d2;
+    display: flex;
+    &__input {
+      width: calc(100% - 100px - 15px);
+      position: relative;
+      &--text{
+        display: flex;
+      }
+      &--input{
+        height: 50px;
+        width: 100%;
+        padding-left: 10px;
+        color: $subtext;
+        border-style: none;
+      }
+      &--label{
+        font-size: 20px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+      &--file{
+        display: none;
+      }
+      &--submit{
+        width: 100px;
+        height: 50px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+      }
+    }
   }
 }
