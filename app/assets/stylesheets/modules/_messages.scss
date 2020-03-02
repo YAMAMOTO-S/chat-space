@@ -1,5 +1,6 @@
 $marinblue: #38aef0;
 $subtext: #999999;
+$name: #333333;
 
 * {
   box-sizing: border-box;
@@ -63,7 +64,7 @@ $subtext: #999999;
     justify-content: space-between;
     padding: 35px 40px 15px 40px;
     &__name {
-      color: #333333;
+      color: $name;
       font-size: 20px;
       &__member {
         color: $subtext;
@@ -92,7 +93,7 @@ $subtext: #999999;
     &__namebox {
       display: flex;
       &__name{
-        color: #333333;
+        color: $name;
         font-size: 16px;
         margin-right: 10px;
         font-weight: bold;
