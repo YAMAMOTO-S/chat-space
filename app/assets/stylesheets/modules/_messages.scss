@@ -85,9 +85,31 @@
       }
     }
   }
+
+
   &__main {
     background-color: #fafafa;
     height: calc(100vh - 190px);
+    padding-top: 35px;
+    padding-left: 40px;
+    &__namebox {
+      display: flex;
+      &__name{
+        color: #333333;
+        font-size: 16px;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+      &__date {
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+    &__message {
+      color: #434A54;
+      margin-top: 12px;
+      padding-bottom: 46px;
+    }
   }
   &__footer {
     background-color: #d2d2d2;
