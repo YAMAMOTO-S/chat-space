@@ -35,14 +35,55 @@
   &__side {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    padding: 20px 20px 40px 20px;
+    &__box {
+      &__name {
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      &__message {
+        color: white;
+        font-weight: bold;
+        font-size: 11px;
+      }
+    }
+    
   }
 }
+
+
 
 .right {
   width: calc(100vw - 300px);
   &__header {
     background-color: #ffffff;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 40px 15px 40px;
+    &__name {
+      color: #333333;
+      font-size: 20px;
+      &__member {
+        color: #999999;
+        font-size: 12px;
+        padding-top: 15px;
+      }
+    }
+    &__edit {
+      text-align: center;
+      line-height: 40px;
+      height: 40px;
+      width: 72px;
+      border: 1px solid;
+      color: #38aef0;
+      &--link {
+        text-decoration: none;
+        color: #38aef0;
+      }
+    }
   }
   &__main {
     background-color: #fafafa;
