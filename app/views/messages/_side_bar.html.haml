@@ -1,1 +1,13 @@
-<サイドバー>
+.left
+  .left__header
+    .left__header__name
+      %p.left__header__name
+        yamamoto
+      %ul.left__header__name__ul
+        %li.left__header__name__ul__li
+          = link_to "#", class: "left__header__name__ul__li--icon" do
+            = icon('far', 'far fa-edit')
+        %li.left__header__name__ul__li
+          = link_to "#", class: "left__header__name__ul__li--icon" do
+            = icon('fas', ' fas fa-cog')
+  .left__side
