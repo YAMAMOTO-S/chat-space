@@ -5,7 +5,7 @@
         = current_user.name
       %ul.left__header__name__ul
         %li.left__header__name__ul__li
-          = link_to "#", class: "left__header__name__ul__li--icon" do
+          = link_to new_group_path, class: "left__header__name__ul__li--icon" do
             = icon('far', 'far fa-edit')
         %li.left__header__name__ul__li
           = link_to edit_user_path(current_user), class: "left__header__name__ul__li--icon" do
