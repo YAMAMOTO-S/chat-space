@@ -1,0 +1,31 @@
+.right
+  .right__header
+    .right__header__name
+      group name
+      .right__header__name__member
+        member kun
+    .right__header__edit
+      = link_to "Edit", "#", class: "right__header__edit--link"
+  .right__main
+    .right__main__namebox
+      .right__main__namebox__name
+        yama
+      .right__main__namebox__date
+        2020/03/02
+    .right__main__message
+      ohayo
+    .right__main__namebox
+      .right__main__namebox__name
+        test kun
+      .right__main__namebox__date
+        2020/03/02
+    .right__main__message
+      kontiwa
+  .right__form
+    .right__form__input
+      %form.right__form__input--text{action: "/", method: "post"}
+        %input.right__form__input--input{placeholder: 'new message'}
+        %label.right__form__input--label
+          = icon('fas', 'image')
+          %input.right__form__input--file{type: "file"}
+    %input.right__form__input--submit{type: "submit", value: "Send"}

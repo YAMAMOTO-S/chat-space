@@ -1,0 +1,148 @@
+$marinblue: #38aef0;
+$subtext: #999999;
+$name: #333333;
+
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+}
+.left {
+  width: 300px;
+  &__header {
+    height: 100px;
+    background-color: #253141;
+    padding:  0 20px;
+    align-items: center;
+    display: flex;
+    &__name {
+      height: 20px;
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      color: white;
+      font-weight: bold;
+      &__ul {
+        display: flex;
+        &__li {
+          margin-right: 5px;
+          &--icon{
+            color: white;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  &__side {
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 20px 20px 40px 20px;
+    &__box {
+      &__name {
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      &__message {
+        color: white;
+        font-weight: bold;
+        font-size: 11px;
+      }
+    }
+    
+  }
+}
+.right {
+  width: calc(100vw - 300px);
+  &__header {
+    background-color: #ffffff;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 40px 15px 40px;
+    &__name {
+      color: $name;
+      font-size: 20px;
+      &__member {
+        color: $subtext;
+        font-size: 12px;
+        padding-top: 15px;
+      }
+    }
+    &__edit {
+      text-align: center;
+      line-height: 40px;
+      height: 40px;
+      width: 72px;
+      border: 1px solid;
+      color: $marinblue;
+      &--link {
+        text-decoration: none;
+        color: $marinblue;
+      }
+    }
+  }
+  &__main {
+    background-color: #fafafa;
+    height: calc(100vh - 190px);
+    padding-top: 35px;
+    padding-left: 40px;
+    &__namebox {
+      display: flex;
+      &__name{
+        color: $name;
+        font-size: 16px;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+      &__date {
+        color: $subtext;
+        font-size: 12px;
+      }
+    }
+    &__message {
+      color: #434A54;
+      margin-top: 12px;
+      padding-bottom: 46px;
+    }
+  }
+  &__form {
+    height: 90px;
+    padding: 20px 40px;
+    background-color: #d2d2d2;
+    display: flex;
+    &__input {
+      width: calc(100% - 100px - 15px);
+      position: relative;
+      &--text{
+        display: flex;
+      }
+      &--input{
+        height: 50px;
+        width: 100%;
+        padding-left: 10px;
+        color: $subtext;
+        border-style: none;
+      }
+      &--label{
+        font-size: 20px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+      &--file{
+        display: none;
+      }
+      &--submit{
+        width: 100px;
+        height: 50px;
+        margin-left: 15px;
+        background-color: $marinblue;
+        color: white;
+      }
+    }
+  }
+}
