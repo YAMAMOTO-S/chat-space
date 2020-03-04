@@ -13,7 +13,8 @@
   .left__side
     - current_user.groups.each do |group|
       .left__side__box
-        .left__side__box__name
-          = group.name
-        .left__side__box__message
-          new message
+        = link_to group_messages_path(group) do
+          .left__side__box__name
+            = group.name
+          .left__side__box__message
+            = group.show_last_message
