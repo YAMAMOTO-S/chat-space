@@ -109,6 +109,7 @@ $name: #333333;
       padding-bottom: 46px;
     }
   }
+  
   &__form {
     height: 90px;
     padding: 20px 40px;
@@ -117,6 +118,9 @@ $name: #333333;
     &__input {
       width: calc(100% - 100px - 15px);
       position: relative;
+      &--form{
+        display: flex;
+      }
       &--text{
         display: flex;
       }
@@ -131,7 +135,7 @@ $name: #333333;
         font-size: 20px;
         position: absolute;
         top: 10px;
-        right: 20px;
+        right: 130px;
       }
       &--file{
         display: none;
