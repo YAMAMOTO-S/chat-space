@@ -2,21 +2,17 @@
 .right
   .right__header
     .right__header__name
+      = @group.name
       .right__header__name__member
-        member kun
+        - member = ' '
+        - @group.users.each do |user|
+          - member += 'Member: ' + user.name
+        %p #{member}
     .right__header__edit
-      = link_to "Edit", "#", class: "right__header__edit--link"
+      = link_to "Edit", edit_group_path(params[:group_id]), class: "right__header__edit--link"
+
   .right__main
     = render partial: 'message', collection: @messages
-
-  -# .right__form
-  -#   .right__form__input
-  -#     %form.right__form__input--text{action: "/", method: "post"}
-  -#       %input.right__form__input--input{placeholder: 'new message'}
-  -#       %label.right__form__input--label
-  -#         = icon('fas', 'image')
-  -#         %input.right__form__input--file{type: "file"}
-  -#   %input.right__form__input--submit{type: "submit", value: "Send"}
 
   .right__form
     .right__form__input
