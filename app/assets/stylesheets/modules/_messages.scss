@@ -40,11 +40,15 @@ $name: #333333;
     background-color: #2f3e51;
     padding: 20px 20px 40px 20px;
     &__box {
+      a {
+        text-decoration: none;
+      }
       &__name {
         color: white;
         font-weight: bold;
         font-size: 15px;
         margin-bottom: 5px;
+        text-decoration: none;
       }
       &__message {
         color: white;
