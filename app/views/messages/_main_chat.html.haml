@@ -4,9 +4,9 @@
     .right__header__name
       = @group.name
       .right__header__name__member
-        - member = ' '
+        - member = 'Member: '
         - @group.users.each do |user|
-          - member += 'Member: ' + user.name
+          - member += user.name + ', '
         %p #{member}
     .right__header__edit
       = link_to "Edit", edit_group_path(params[:group_id]), class: "right__header__edit--link"
